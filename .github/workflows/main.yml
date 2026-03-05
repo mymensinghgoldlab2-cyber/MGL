@@ -1,4 +1,4 @@
-name: Build Windows EXE
+name: Build Windows App
 
 on:
   push:
@@ -23,8 +23,8 @@ jobs:
       - name: Build app
         run: npm run build
 
-      - name: Upload Artifact
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MGL-Voucher-Setup
-          path: dist/*
+          name: windows-build
+          path: dist
