@@ -10,4 +10,5 @@ icon:"mgl_icon.ico"
 win.loadFile("index.html")
 }
 
+
 app.whenReady().then(createWindow)
